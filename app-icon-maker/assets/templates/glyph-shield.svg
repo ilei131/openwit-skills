@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!--
+    app-icon-maker · foreground template — SHIELD / 密码管理 / 安全
+    A crest shield with a keyhole knocked out. Two elements only, so the
+    silhouette still reads at 20 px. fill-rule="evenodd" with a single
+    outer contour + a single hole contour: winding order is irrelevant
+    here because nothing overlaps.
+  -->
+  <path fill="#FFFFFF" fill-rule="evenodd"
+        d="M 344 260
+           L 680 260
+           Q 724 260 724 304
+           L 724 470
+           C 724 632 640 748 512 800
+           C 384 748 300 632 300 470
+           L 300 304
+           Q 300 260 344 260
+           Z
+           M 472 521.28
+           A 80 80 0 1 1 552 521.28
+           L 542 664
+           Q 512 690 482 664
+           Z"/>
+</svg>

@@ -1,6 +1,6 @@
 {
-  "name": "Demo",
-  "short_name": "Demo",
+  "name": "密码管家",
+  "short_name": "密码管家",
   "icons": [
     {
       "src": "icon-192.png",

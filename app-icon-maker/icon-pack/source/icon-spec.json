@@ -1,176 +1,176 @@
 {
-  "name": "Demo",
-  "createdAt": "2026-11-05T13:13:02.502Z",
+  "name": "密码管家",
+  "createdAt": "2026-11-05T13:26:26.707Z",
   "files": [
     {
       "path": "ios/AppIcon.appiconset/icon-iphone-20x20@2x.png",
-      "bytes": 1890,
+      "bytes": 1899,
       "note": "40x40"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-iphone-20x20@3x.png",
-      "bytes": 2531,
+      "bytes": 2489,
       "note": "60x60"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-iphone-29x29@2x.png",
-      "bytes": 2463,
+      "bytes": 2417,
       "note": "58x58"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-iphone-29x29@3x.png",
-      "bytes": 3429,
+      "bytes": 3444,
       "note": "87x87"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-iphone-40x40@2x.png",
-      "bytes": 3210,
+      "bytes": 3175,
       "note": "80x80"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-iphone-40x40@3x.png",
-      "bytes": 4825,
+      "bytes": 4476,
       "note": "120x120"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-iphone-60x60@2x.png",
-      "bytes": 4825,
+      "bytes": 4476,
       "note": "120x120"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-iphone-60x60@3x.png",
-      "bytes": 6324,
+      "bytes": 6194,
       "note": "180x180"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-ipad-20x20@1x.png",
-      "bytes": 1280,
+      "bytes": 1274,
       "note": "20x20"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-ipad-20x20@2x.png",
-      "bytes": 1890,
+      "bytes": 1899,
       "note": "40x40"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-ipad-29x29@1x.png",
-      "bytes": 1572,
+      "bytes": 1559,
       "note": "29x29"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-ipad-29x29@2x.png",
-      "bytes": 2463,
+      "bytes": 2417,
       "note": "58x58"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-ipad-40x40@1x.png",
-      "bytes": 1890,
+      "bytes": 1899,
       "note": "40x40"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-ipad-40x40@2x.png",
-      "bytes": 3210,
+      "bytes": 3175,
       "note": "80x80"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-ipad-76x76@1x.png",
-      "bytes": 3017,
+      "bytes": 3131,
       "note": "76x76"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-ipad-76x76@2x.png",
-      "bytes": 5857,
+      "bytes": 5645,
       "note": "152x152"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-ipad-83.5x83.5@2x.png",
-      "bytes": 6275,
+      "bytes": 5963,
       "note": "167x167"
     },
     {
       "path": "ios/AppIcon.appiconset/icon-ios-marketing-1024x1024@1x.png",
-      "bytes": 21725,
+      "bytes": 24771,
       "note": "1024x1024"
     },
     {
       "path": "ios/AppIcon-Universal.appiconset/icon-1024.png",
-      "bytes": 21725,
+      "bytes": 24771,
       "note": "1024x1024"
     },
     {
       "path": "ios/AppIcon-Universal.appiconset/icon-1024-dark.png",
-      "bytes": 21725,
+      "bytes": 21232,
       "note": "1024x1024"
     },
     {
       "path": "ios/AppIcon-Universal.appiconset/icon-1024-tinted.png",
-      "bytes": 19929,
+      "bytes": 18006,
       "note": "1024x1024"
     },
     {
       "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
-      "bytes": 2695,
+      "bytes": 2616,
       "note": "48x48"
     },
     {
       "path": "android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
-      "bytes": 2803,
+      "bytes": 2746,
       "note": "48x48"
     },
     {
       "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
-      "bytes": 4166,
+      "bytes": 3734,
       "note": "72x72"
     },
     {
       "path": "android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
-      "bytes": 4356,
+      "bytes": 3916,
       "note": "72x72"
     },
     {
       "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
-      "bytes": 5381,
+      "bytes": 5236,
       "note": "96x96"
     },
     {
       "path": "android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
-      "bytes": 5640,
+      "bytes": 5542,
       "note": "96x96"
     },
     {
       "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
-      "bytes": 8196,
+      "bytes": 7540,
       "note": "144x144"
     },
     {
       "path": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
-      "bytes": 8509,
+      "bytes": 7844,
       "note": "144x144"
     },
     {
       "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
-      "bytes": 10131,
+      "bytes": 9579,
       "note": "192x192"
     },
     {
       "path": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
-      "bytes": 10672,
+      "bytes": 10282,
       "note": "192x192"
     },
     {
       "path": "android/app/src/main/res/drawable/ic_launcher_foreground.xml",
-      "bytes": 1217,
+      "bytes": 756,
       "note": "vector 1 paths"
     },
     {
       "path": "android/app/src/main/res/drawable/ic_launcher_monochrome.xml",
-      "bytes": 1217,
+      "bytes": 756,
       "note": "vector silhouette"
     },
     {
       "path": "android/app/src/main/res/drawable/ic_launcher_background.xml",
       "bytes": 926,
-      "note": "vector gradient 150°"
+      "note": "vector gradient 145°"
     },
     {
       "path": "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
@@ -184,7 +184,7 @@
     },
     {
       "path": "android/play-store-icon-512.png",
-      "bytes": 12675,
+      "bytes": 13072,
       "note": "512x512"
     }
   ],
@@ -200,7 +200,7 @@
       "adaptive": "vector",
       "background": "gradient-vector",
       "monochrome": true,
-      "cleanedPrevBuild": true
+      "cleanedPrevBuild": false
     },
     "web": {
       "icons": 8

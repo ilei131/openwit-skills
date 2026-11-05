@@ -97,6 +97,15 @@ const darken = (hexColor, factor = 0.55) => {
   const c = rgb(hexColor);
   return hex({ r: c.r * factor, g: c.g * factor, b: c.b * factor });
 };
+// dark-ify a --bg value: solid hex and every stop of a linear-gradient; returns
+// null when the spec is an image (caller should dim the rendered layer instead)
+const darkenSpec = (spec, factor = 0.55) => {
+  if (/^#/.test(spec)) return darken(spec, factor);
+  if (/^linear-gradient/i.test(spec)) {
+    return spec.replace(/#[0-9a-fA-F]{6}(?=[,\s)])/g, (h) => darken(h, factor));
+  }
+  return null;
+};
 
 const svgGradient = (size, from, to, angle = 135) =>
   `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
@@ -407,9 +416,15 @@ async function main() {
   // dark + tinted appearance variants (iOS 18+)
   let darkMaster, tintedMaster;
   if (fgBuf) {
-    const darkBgSpec = args['dark-bg'] ? String(args['dark-bg'])
-      : (bgSpec && /^#|^rgb/i.test(bgSpec) ? darken(cornerBg, 0.5) : bgSpec);
-    const darkBg = darkBgSpec ? await renderBackground(darkBgSpec, 1024) : null;
+    let darkBg = null;
+    if (args['dark-bg']) {
+      darkBg = await renderBackground(String(args['dark-bg']), 1024);
+    } else if (bgSpec) {
+      const d = darkenSpec(bgSpec, 0.55);
+      darkBg = d
+        ? await renderBackground(d, 1024)
+        : await sharp(await renderBackground(bgSpec, 1024)).modulate({ brightness: 0.55 }).png().toBuffer();
+    }
     const base = darkBg || (await sharp(master).modulate({ brightness: 0.55 }).png().toBuffer());
     darkMaster = await sharp(base).composite([{ input: fgBuf, gravity: 'centre' }])
       .flatten({ background: darken(cornerBg, 0.4) }).removeAlpha().png().toBuffer();

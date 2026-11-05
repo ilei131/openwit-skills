@@ -1,11 +1,11 @@
-# Demo — App 图标资源包
+# 密码管家 — App 图标资源包
 
-由 **app-icon-maker** 生成 · 2026-11-05 · 主色背景 `#442687`
+由 **app-icon-maker** 生成 · 2026-11-05 · 主色背景 `#333494`
 
 ## 目录结构
 
 ```
-demo-icon-pack/
+password-vault-icon-pack/
 ├── ios/
 │   ├── AppIcon.appiconset/          # 传统全尺寸（iPhone + iPad + 1024），Xcode 全版本可用
 │   └── AppIcon-Universal.appiconset/# Xcode 14+ 单尺寸 1024，含 dark / tinted 外观

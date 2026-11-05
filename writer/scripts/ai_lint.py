@@ -114,9 +114,12 @@ def line_snippet(text, idx, width=88):
     if end < 0:
         end = len(text)
     line = text[start:end].strip()
-    if len(line) > width:
-        line = line[:width - 1].rstrip() + "…"
-    return line or "（空行）"
+    if len(line) <= width:
+        return line or "（空行）"
+    pos = max(0, idx - start)
+    s = max(0, pos - width // 2)
+    e = min(len(line), s + width)
+    return ("…" if s else "") + line[s:e].strip() + ("…" if e < len(line) else "")
 
 
 def iter_paragraphs(text):
@@ -142,6 +145,7 @@ def main():
         hard.setdefault(p, ("custom-phrase", "这是题材专属套话，按上下文改写或登记到 ai_ignore。"))
     ignore = set(cfg.get("ai_ignore", []))
     cluster_min = int(cfg.get("ai_cluster_min", 2))
+    soft_rules = {k: v for k, v in SOFT_RULES.items() if k not in hard}
 
     total = 0
     blocking = []
@@ -179,10 +183,10 @@ def main():
                 para_lens.append(n)
             for sent in re.split(r"[。！？\n]+", para):
                 sent = sent.strip("　 “”‘’")
-                if len(sent) >= 6:
+                if len(sent) >= 6 and not sent.startswith("#"):
                     openers[sent[:2]] += 1
             hits = []
-            for phrase, (rule, hint) in SOFT_RULES.items():
+            for phrase, (rule, hint) in soft_rules.items():
                 if phrase in ignore:
                     continue
                 c = para.count(phrase)
