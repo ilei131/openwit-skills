@@ -1,0 +1,10 @@
+{
+  "name": "app-icon-maker-tools",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "sharp": "^0.34.0",
+    "archiver": "^7.0.1"
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Demo — Icon Pack</title>
+<style>
+  :root{--bg:#f6f7f9;--card:#fff;--line:#e5e7eb;--tx:#111827;--mut:#6b7280;--accent:#4f46e5}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.6 -apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+  .wrap{max-width:1080px;margin:0 auto;padding:48px 24px 80px}
+  h1{font-size:32px;margin:0 0 6px;letter-spacing:-.02em}
+  .sub{color:var(--mut);margin-bottom:32px}
+  .hero{display:flex;gap:28px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;margin-bottom:36px}
+  .hero img{width:120px;height:120px;border-radius:27px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+  .hero .meta{display:flex;gap:28px;flex-wrap:wrap;color:var(--mut);font-size:13px}
+  h2{font-size:16px;margin:36px 0 14px;display:flex;align-items:center;gap:10px}
+  h2 span{font:500 12px/1 monospace;color:var(--mut)}
+  .grid{display:flex;flex-wrap:wrap;gap:22px;align-items:flex-end}
+  .item{text-align:center;color:var(--mut);font-size:11px}
+  .item img{display:block;background:#fff;border:1px solid var(--line);image-rendering:auto}
+  .sq img{border-radius:22.37%}
+  .rd img{border-radius:50%}
+  code{background:#eef2ff;color:#4338ca;padding:2px 6px;border-radius:5px;font-size:12px}
+</style></head>
+<body><div class="wrap">
+  <h1>Demo</h1>
+  <div class="sub">App icon asset pack · 背景色 <code>#442687</code> · 37 个文件</div>
+  <div class="hero">
+    <img src="ios/AppIcon-Universal.appiconset/icon-1024.png" alt="icon">
+    <div class="meta">
+      <div>iOS：18 张 AppIcon + 单尺寸 1024 三态</div>
+      <div>Android：drawable 三层矢量 + 5 密度传统位图</div>
+      <div>Web/PWA：favicon + manifest</div>
+    </div>
+  </div>
+
+  <h2>iOS <span>AppIcon.appiconset</span></h2>
+  <div class="grid sq">
+    <div class="item"><img src="ios/AppIcon.appiconset/icon-iphone-20x20@2x.png" width="96" height="96"><div>40x40</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-iphone-20x20@3x.png" width="96" height="96"><div>60x60</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-iphone-29x29@2x.png" width="96" height="96"><div>58x58</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-iphone-29x29@3x.png" width="96" height="96"><div>87x87</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-iphone-40x40@2x.png" width="96" height="96"><div>80x80</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-iphone-40x40@3x.png" width="96" height="96"><div>120x120</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-iphone-60x60@2x.png" width="96" height="96"><div>120x120</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-iphone-60x60@3x.png" width="96" height="96"><div>180x180</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-ipad-20x20@1x.png" width="96" height="96"><div>20x20</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-ipad-20x20@2x.png" width="96" height="96"><div>40x40</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-ipad-29x29@1x.png" width="96" height="96"><div>29x29</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-ipad-29x29@2x.png" width="96" height="96"><div>58x58</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-ipad-40x40@1x.png" width="96" height="96"><div>40x40</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-ipad-40x40@2x.png" width="96" height="96"><div>80x80</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-ipad-76x76@1x.png" width="96" height="96"><div>76x76</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-ipad-76x76@2x.png" width="96" height="96"><div>152x152</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-ipad-83.5x83.5@2x.png" width="96" height="96"><div>167x167</div></div><div class="item"><img src="ios/AppIcon.appiconset/icon-ios-marketing-1024x1024@1x.png" width="96" height="96"><div>1024x1024</div></div>
+  </div>
+
+  <h2>Android <span>mipmap-*</span></h2>
+  <div class="grid rd">
+    <div class="item"><img src="android/app/src/main/res/mipmap-mdpi/ic_launcher.png" width="48"><div>48x48</div></div><div class="item"><img src="android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" width="48"><div>48x48</div></div><div class="item"><img src="android/app/src/main/res/mipmap-hdpi/ic_launcher.png" width="72"><div>72x72</div></div><div class="item"><img src="android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" width="72"><div>72x72</div></div><div class="item"><img src="android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" width="96"><div>96x96</div></div><div class="item"><img src="android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" width="96"><div>96x96</div></div><div class="item"><img src="android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" width="96"><div>144x144</div></div><div class="item"><img src="android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" width="96"><div>144x144</div></div><div class="item"><img src="android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width="96"><div>192x192</div></div><div class="item"><img src="android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" width="96"><div>192x192</div></div>
+  </div>
+</div></body></html>

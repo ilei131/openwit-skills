@@ -18,7 +18,7 @@ python3 /path/to/skills/writer/scripts/check.py --root ~/books/my-novel
 |---|---|---|
 | `scripts/init_book.py` | 初始化项目骨架（00—07 模板 + book.json + chapters/） | `--root DIR`、`--force` |
 | `scripts/check.py` | 每章字数 + 跨章重复句子 + 术语别名 | `--root` |
-| `scripts/ai_lint.py` | AI 味自查：套路词、句首重复、段长标准差 | `--root` |
+| `scripts/ai_lint.py` | AI 味自查：必改项 + 聚簇提示，输出文件:行:列 | `--root` |
 | `scripts/audit.py` | 全书审计：编号/标题、占位符、术语、重复片段、称谓 | `--root` |
 | `scripts/normalize_quotes.py` | 英文直引号 → 中文弯引号 | `--root`、`--dry-run` |
 | `scripts/build.py` | 合成全书并导出 md / docx / pdf | `--root`、`--formats`、`--out` |
@@ -49,7 +49,9 @@ python3 /path/to/skills/writer/scripts/check.py --root ~/books/my-novel
 | `core_terms` | str[] | `[]` | 必须出现 ≥1 次的核心术语 |
 | `appellations` | str[] | `[]` | 需要统计出现次数的称谓 |
 | `placeholder_markers` | str[] | 常见占位词 | audit 的残留扫描词 |
-| `ai_phrases` | str[] | `[]` | 追加到 AI 味自查的题材专属套话 |
+| `ai_phrases` | str[] | `[]` | 追加到 AI 味自查的题材专属套话（计入 blocking） |
+| `ai_ignore` | str[] | `[]` | 有意保留的口头禅/母题，命中后跳过 |
+| `ai_cluster_min` | int | `2` | 同段出现多少个不同软性词才算聚簇（advisory） |
 
 ## 从旧项目迁移
 

@@ -36,5 +36,7 @@
   "core_terms": ["必须出现一次以上的核心术语"],
   "appellations": ["孙悟空", "八戒"],
   "placeholder_markers": ["待写", "TODO", "待补", "（略）", "XXX", "待续"],
-  "ai_phrases": ["本书容易写顺口的套话"]
+  "ai_phrases": ["本书容易写顺口的套话"],
+  "ai_ignore": ["角色 A 的口头禅", "有意重复的母题措辞"],
+  "ai_cluster_min": 2
 }

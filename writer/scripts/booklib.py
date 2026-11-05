@@ -46,6 +46,8 @@ DEFAULTS = {
     "appellations": [],               # 需要统计的称谓
     "placeholder_markers": ["待写", "TODO", "待补", "（略）", "XXX", "待续"],
     "ai_phrases": [],                 # 追加到 AI 味自查的题材专属套话
+    "ai_ignore": [],                  # 有意保留的口头禅/母题，命中后跳过
+    "ai_cluster_min": 2,              # 同段出现多少个不同软性词才算聚簇
 }
 
 

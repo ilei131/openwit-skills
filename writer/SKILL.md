@@ -1,12 +1,19 @@
 ---
 name: "writer"
+version: 1.2.0
+display_name: 长文档写作框架
+display_name_en: Long-Form Writing Framework
 description: >
   用于撰写长文档（书籍、手册、课程、系列文章等）的可分发执行框架。
   核心逻辑：先建总纲 → 逐章执行「读总纲→生成提纲→写正文→查重→更新进度与连续性→验收」
   → 每章通过才进下一章 → 全书完成后统一审计 → 导出 Word/PDF。
   自带与安装位置无关的质检脚本（字数/查重/AI 味/审计/引号归一/合成导出），
   书稿专属数据由项目根目录的 book.json 提供。
-  Invoke when the user wants to write a book, manual, course or any long document.
+  触发：写书、写手册、写课程、写系列文章、长篇写作、逐章续写、书稿质检与导出。
+  Invoke when the user wants to write a book, manual, course, or any long-form document,
+  or to audit, continue, or export an existing manuscript.
+description_zh: 面向书籍、手册、课程、系列文章等长文档的自包含写作框架：先搭总纲与写作规范，再按「读总纲→生成提纲→写正文→查重→更新进度与连续性→逐章验收」循环推进，章章通过后统一审计并导出 md/Word/PDF；内置字数、跨章查重、AI 味自查、术语/占位符审计、引号归一与成品合成脚本，书稿专属配置集中于 book.json。适用于中长篇创作、连载续写、多人协作与旧稿整理；不适用于短文案与单篇营销稿。
+description_en: A self-contained long-form writing framework for books, manuals, courses, and serialized articles. It scaffolds the outline and style rules, then runs a six-step per-chapter loop (read outline → plan scenes → draft → dedupe → update progress and continuity → accept), followed by a whole-book audit and md/docx/pdf export. Position-independent QC scripts cover word count, cross-chapter repetition, AI-tone lint, terminology and placeholder audit, quote normalization, and final assembly. Book-specific settings live in book.json. Best for multi-chapter works, serialized continuation, and collaborative drafting; not for short copy or one-off marketing posts.
 ---
 
 # 写书执行框架：让 Agent 按固定流程逐章完成长文档，不跑偏、不重复
@@ -22,7 +29,7 @@ writer/
 │   ├── booklib.py            公共库：定位项目根、加载 book.json、发现章节
 │   ├── init_book.py          初始化项目骨架（00—07 + book.json + chapters/）
 │   ├── check.py              每章字数 + 跨章重复句子 + 术语别名
-│   ├── ai_lint.py            AI 味自查：套路词、句首重复、段长标准差
+│   ├── ai_lint.py            AI 味自查：必改项 + 聚簇提示，输出文件:行:列
 │   ├── audit.py              全书审计：编号/标题、占位符、术语、重复片段、称谓
 │   ├── normalize_quotes.py   英文直引号 → 中文弯引号
 │   └── build.py              合成全书并导出 md / docx / pdf
@@ -65,7 +72,7 @@ writer/
 | `03_术语表.md` | 全书统一术语、固定定义、固定称谓 |
 | `04_验收标准.md` | 每章必须满足的验收条件 |
 | `05_进度跟踪.md` | 章节状态（待写/写作中/待验收/已完成） |
-| `06_连续性档案.md` | 滚动台账：人名、物名、地点、时间线、伏笔、数值 |
+| `06_连续性档案.md` | 滚动台账：实体台账、分章状态卡、承诺/伏笔台账、滚动摘要 |
 | `07_写作任务说明.md` | 逐章执行的固定规程（可直接交给子代理） |
 | `book.json` | 脚本配置（书名/卷结构/字数区间/术语别名等） |
 | `chapters/` | 每章一个文件，`第NN章_标题.md` |

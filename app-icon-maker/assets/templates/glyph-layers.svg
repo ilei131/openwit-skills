@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!--
+    app-icon-maker · foreground template — LAYERS
+    Depth without baked shadows: three plates, lighter tints receding.
+  -->
+  <g transform="translate(512 512)">
+    <rect x="-196" y="-60" width="392" height="248" rx="56" fill="#FFFFFF" opacity="0.34" transform="skewX(-18) translate(0 -132)"/>
+    <rect x="-196" y="-60" width="392" height="248" rx="56" fill="#FFFFFF" opacity="0.62" transform="skewX(-18) translate(0 -66)"/>
+    <rect x="-196" y="-60" width="392" height="248" rx="56" fill="#FFFFFF" transform="skewX(-18)"/>
+  </g>
+</svg>

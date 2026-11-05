@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!--
+    app-icon-maker · foreground template — BOLT
+    Transparent canvas. Keep the mark inside the central 72% (x/y 143…881):
+    Android adaptive icons crop the outer 18% on every side.
+    Do NOT bake rounded corners, drop shadows or a background — the system adds them.
+  -->
+  <defs>
+    <linearGradient id="ink" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DCE4FF"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#ink)" stroke="url(#ink)" stroke-width="26" stroke-linejoin="round"
+        d="M566 238 L344 548 H498 L466 786 L700 470 H540 Z"/>
+</svg>

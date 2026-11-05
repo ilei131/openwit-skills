@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!--
+    app-icon-maker · foreground template — CHAT
+    Bubble body + three knocked-out dots (fill-rule="evenodd").
+    Reads at 20px because the silhouette stays a single solid mass.
+  -->
+  <path fill="#FFFFFF" fill-rule="evenodd"
+        d="M512 232c-160 0-290 112-290 250 0 78 42 148 108 194l-30 116 132-64c25 5 52 8 80 8 160 0 290-112 290-250S672 232 512 232z
+           M372 482a44 44 0 1 1 0 .1z M512 482a44 44 0 1 1 0 .1z M652 482a44 44 0 1 1 0 .1z"/>
+</svg>
