@@ -1,0 +1,40 @@
+{
+  "_说明": "复制到书稿项目根目录并改名为 book.json。所有字段都可省略，省略即用脚本内置默认值。",
+  "title": "书名",
+  "subtitle": "副标题（可空）",
+  "author": "—— 卷册说明 / 作者（可空） ——",
+  "intro": [
+    "一句话梗概第一段。",
+    "一句话梗概第二段。",
+    "全书核心问题：……"
+  ],
+  "notice": "创作声明：……（原创构思与版权说明）",
+
+  "chapters_dir": "chapters",
+  "chapter_glob": "第*章_*.md",
+  "chapter_re": "第(\\d{2,})章_(.+)\\.md$",
+  "heading_format": "# 第 {n} 章 {title}",
+
+  "word_range": [4000, 5200],
+  "duplicate_min_len": 12,
+  "duplicate_window": 10,
+  "duplicate_min_chapters": 3,
+
+  "volumes": [
+    { "name": "第一卷：卷名", "start": 1, "end": 8 },
+    { "name": "第二卷：卷名", "start": 9, "end": 16 }
+  ],
+
+  "expected_titles": [
+    "第一章标题（与文件名中顿号等原样一致）",
+    "第二章标题"
+  ],
+
+  "term_aliases": {
+    "错误写法示例": "应统一为『正确写法』"
+  },
+  "core_terms": ["必须出现一次以上的核心术语"],
+  "appellations": ["孙悟空", "八戒"],
+  "placeholder_markers": ["待写", "TODO", "待补", "（略）", "XXX", "待续"],
+  "ai_phrases": ["本书容易写顺口的套话"]
+}
